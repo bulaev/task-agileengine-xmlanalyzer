@@ -1,0 +1,37 @@
+java -jar xmlanalyzer.jar sample-0-origin.html sample-1-evil-gemini.html make-everything-ok-button
+
+Element path:
+html > body > div > div > div > div > div > div > a
+Attributes involved in decision making (Name and value):
+CLASS : 2
+TITLE : 1
+ONCLICK : 2
+
+java -jar xmlanalyzer.jar sample-0-origin.html sample-2-container-and-clone.html make-everything-ok-button
+
+Element path:
+html > body > div > div > div > div > div > div > div > a
+Attributes involved in decision making (Name and value):
+HREF : 1
+TITLE : 1
+REL : 1
+
+java -jar xmlanalyzer.jar sample-0-origin.html sample-3-the-escape.html make-everything-ok-button
+
+Element path:
+html > body > div > div > div > div > div > div > a
+Attributes involved in decision making (Name and value):
+CLASS : 2
+HREF : 1
+REL : 1
+ONCLICK : 2
+
+java -jar xmlanalyzer.jar sample-0-origin.html sample-4-the-mash.html make-everything-ok-button
+
+Element path:
+html > body > div > div > div > div > div > div > a
+Attributes involved in decision making (Name and value):
+CLASS : 2
+HREF : 1
+TITLE : 1
+REL : 1
