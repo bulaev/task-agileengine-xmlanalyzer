@@ -19,6 +19,7 @@ public class XMLAnalyzer {
 	private static Logger LOGGER = LoggerFactory.getLogger(XMLAnalyzer.class);
 
 	private static final String CHARSET_NAME = "utf8";
+	private static final int ARGS_NUMBER = 3;
 	
 	public static void main(String[] args) {
 		try {
@@ -26,8 +27,8 @@ public class XMLAnalyzer {
 			String diffFilePath;
 			String targetElementId;
 			
-			if(args.length != 3) {
-				throw new IllegalArgumentException("Incorrect number of input arguments: " + args.length + ". Expected: 3");
+			if(args.length != ARGS_NUMBER) {
+				throw new IllegalArgumentException("Incorrect number of input arguments: " + args.length + ". Expected: " + ARGS_NUMBER);
 			} else {
 				originFilePath = args[0];
 				diffFilePath = args[1];
